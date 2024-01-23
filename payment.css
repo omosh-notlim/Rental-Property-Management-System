@@ -1,0 +1,96 @@
+body{
+	margin: 0;
+	padding: 0;
+	/*font-family: montserrat;*/
+	font-family: "Times New Roman", Times, serif;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.pay-div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 4px 5px 10px 0px cyan;
+}
+
+.pay-heading h1{
+	text-align: center;
+	padding: 0 0 20px 0;
+	color: #8c8c8c;
+	border-bottom: 2px solid cyan;
+}
+
+.pay-div form{
+	padding: 0 40px;
+}
+
+form .pay-text-area{
+	position: relative;
+	margin: 10px 0;
+}
+
+.pay-text-area input{
+	width: 100%;
+	padding: 0 5px;
+	height: 30px;
+	font-size: 16px;
+	/*border: none;*/
+	/*background: none;*/
+
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	border-top-width: 0;
+	/*background: rgb(200, 200, 200, 0.6);*/
+	border-bottom-width: 2px;
+	margin-top: 5px;
+	font-family: "Times New Roman", Times, serif;
+	transition: 0.3s ease;
+}
+
+.pay-text-area label{
+	position: absolute;
+	font-size: 16px;
+	line-height: 1.5em;
+	font-weight: 550;
+	pointer-events: none;
+}
+
+.pay-text-area input:focus,
+.pay-text-area input:valid{
+	border-color: cyan;
+}
+
+.pay-bt{
+	margin: 40px auto 20px auto;
+}
+.pay-bt input{
+	height: 30px;
+	margin-left: 5px;
+	border-radius: 30px;
+	border: solid .5px #b3e0ff;
+	background-color: #1aa3ff;
+	font-family: "Courier New", Courier, monospace;
+	color: #fff;
+}
+.pay-bt input:hover{
+	height: 37px;
+	font-weight: 700;
+}
+
+
+
+@media only screen and (max-width: 430px){
+	.pay-div{
+		width: 320px;
+	}
+
+	.pay-heading h1{
+		font-size: 27px;
+	}
+}
